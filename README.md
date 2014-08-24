@@ -1,4 +1,3 @@
-pres-azure-app-sso-o365
+Using Azure Active Directory for App Authentication & Single Sign-On with Office 365
 =======================
-
-Using Azure Active Directory for App Authentication &amp; Single Sign-On with Office 365
+> Microsoft’s Azure Active Directory has provided the ability to maintain user identities in a hosted implementation of AD for quite some time. Relatively new to the platform is the ability to also add apps and grant these apps permissions within Azure AD. Customers can also configure their on-premises AD implementations to synchronize with an Azure AD directory to federate their corporate user identities to their cloud investments in Azure providing single-signon. More and more customers are using using Office 365 either entirely in their organization for email, instant messaging, presence and collaboration as it offers hosted Exchange, Lync and SharePoint. In fact, Office 365 uses the same Azure AD to store user identities as are found in Azure. In this session you will see how to create a ASP.NET web application in Azure AD that requires zero configuration in Office 365 to provide a single sign-on experience where your app can authenticate and interact with Office 365 resources straight from an Azure Web Site!
