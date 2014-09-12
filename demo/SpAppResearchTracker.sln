@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpResearchTracker", "SpResearchTracker\SpResearchTracker.csproj", "{39C5B897-1BB3-4088-ACEC-8F820071667C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishScripts", "PublishScripts", "{DAB5783D-0BF1-4F8E-9FA2-586541949F93}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\AzureWebsitePublishModule.psm1 = PublishScripts\AzureWebsitePublishModule.psm1
+		PublishScripts\Publish-WebApplicationWebsite.ps1 = PublishScripts\Publish-WebApplicationWebsite.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configurations", "Configurations", "{16551462-E759-4C84-813F-F90B322B8B5B}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Configurations\SpResearchTracker-WAWS-dev.json = PublishScripts\Configurations\SpResearchTracker-WAWS-dev.json
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{39C5B897-1BB3-4088-ACEC-8F820071667C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39C5B897-1BB3-4088-ACEC-8F820071667C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39C5B897-1BB3-4088-ACEC-8F820071667C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39C5B897-1BB3-4088-ACEC-8F820071667C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{16551462-E759-4C84-813F-F90B322B8B5B} = {DAB5783D-0BF1-4F8E-9FA2-586541949F93}
+	EndGlobalSection
+EndGlobal
