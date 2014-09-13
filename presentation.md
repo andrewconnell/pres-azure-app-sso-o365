@@ -1,6 +1,6 @@
 Using Azure Active Directory for App Authentication & Single Sign-On with Office 365
 ====================================================================================
->*Follow along at [github.com/andrewconnell/pres-azure-app-sso-o365](http://github.com/andrewconnell/pres-azure-app-sso-o365)*
+>*Follow along at [github.com / andrewconnell / pres-azure-app-sso-o365](http://github.com/andrewconnell/pres-azure-app-sso-o365)*
 
 Overview
 ========
@@ -136,9 +136,8 @@ Thanks! Any Questions?
 
 Andrew Connell
 ==============
-- blog: [www.andrewconnell.com](http://www.andrewconnell.com)
-- twitter: [@andrewconnell](http://www.twitter.com/andrewconnell)
-- this presentation: [github.com / andrewconnell / pres-azure-app-sso-o365](http://github.com/andrewconnell/pres-azure-app-sso-o365)
+- [www.andrewconnell.com](http://www.andrewconnell.com) | [@andrewconnell](http://www.twitter.com/andrewconnell)
+- this pres: [github.com / andrewconnell / pres-azure-app-sso-o365](http://github.com/andrewconnell/pres-azure-app-sso-o365)
 
 
 
