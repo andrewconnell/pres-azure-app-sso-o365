@@ -1,7 +1,3 @@
-Using Azure Active Directory for App Authentication & Single Sign-On with Office 365
-====================================================================================
->*Follow along at [github.com / andrewconnell / pres-azure-app-sso-o365](http://github.com/andrewconnell/pres-azure-app-sso-o365)*
-
 Overview
 ========
 1. [Office 365 & Microsoft Azure Overview](#office-365--microsoft-azure-overview)
@@ -10,34 +6,33 @@ Overview
 
 
 
-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
-
-
-
 Office 365 & Microsoft Azure Overview
 =====================================
+What is Office 365 & Microsoft Azure?
+
+
 
 Office 365
 ----------
-  + Exchange Online
-  + SharePoint Online
-  + and more...
-  + Great for business-y / enterprise-y / office-y solutions
+- Exchange Online
+- SharePoint Online
+- and more...
+- Great for business-y / enterprise-y / office-y solutions
 
 
 
 Microsoft Azure
 ---------------
-  + Host custom code
-  + Leverage PaaS offerings for custom solutions
-  + Leverage IaaS for legacy solutions
+- Host custom code
+- Leverage PaaS offerings for custom solutions
+- Leverage IaaS for legacy solutions
 
 
 
 When Combined...
 ----------------
-  + Tons of OOTB services
-  + Can be used OOTB or integrated into custom solutions
+- Tons of OOTB services
+- Can be used OOTB or integrated into custom solutions
 
 
 
@@ -45,23 +40,23 @@ Identity: Office 365 & Azure AD
 ===============================
 - Office 365 uses an Azure AD directory under the covers to store users
 - Azure AD directories can be sync'd with on-premises Active Directories
-  + Azure Active Directory != Windows Active Directory
-  + Azure AD supports app authentication (*currently in preview*)
+  - Azure Active Directory != Windows Active Directory
+  - Azure AD supports app authentication (*currently in preview*)
 - Custom apps can leverage Azure AD to authenticate users
 
 
 
-Office 365 :heavy_plus_sign: Azure AD = Identity Bliss
-------------------------------------------------------
+Office 365 + Azure AD = Identity Bliss
+--------------------------------------
 - You can associate your Azure subscription with your Office 365 directory
 - Enables apps to leverage Azure AD for authentication (user & app)
 - Azure AD apps provide Office 365 access via app permissions (*regardless of user permissions*)
 - Now custom apps can take advantage of powerful Office 365 services:
-  + Metadata
-  + Search
-  + Workflow
-  + Lists & libraries
-  + Document management (checkin/checkout, declare record, versions, alerts, etc)
+  - Metadata
+  - Search
+  - Workflow
+  - Lists & libraries
+  - Document management (checkin/checkout, declare record, versions, alerts, etc)
 
 
 
@@ -78,24 +73,24 @@ Office 365 Trusts Azure AD
 What about that OAuth2 Access Token?
 ------------------------------------
 - OAuth2 access tokens are like currency :moneybag:
-  + Regardless of how it was obtained, anyone can use it
+  - Regardless of how it was obtained, anyone can use it
 - Some protection built into the token (JWT)
-  + Issued by...
-  + Intended for...
-  + Not valid before...
-  + Expires in...
+  - Issued by...
+  - Intended for...
+  - Not valid before...
+  - Expires in...
 
 
 
-Protecting the Access Token :lock:
-----------------------------------
+Protecting the Access Token
+---------------------------
 - Never pass it over HTTP, **always** use HTTPS (SSL) 
 - Never pass it to the client, keep it server-side
-  + Once it touches the client, it's clear text & anyone can see it
+  - Once it touches the client, it's clear text & anyone can see it
 - Create an intermediary that obtains, protects & uses the access token
-  + Store in session state / cache / database
-  + Use standard web auth with your app & intermediary
-  + *Example: .NET's [Anti-Forgery](http://msdn.microsoft.com/en-us/library/system.web.helpers.antiforgery.aspx) Class*
+  - Store in session state / cache / database
+  - Use standard web auth with your app & intermediary
+  - *Example: .NET's [Anti-Forgery](http://msdn.microsoft.com/en-us/library/system.web.helpers.antiforgery.aspx) Class*
 
 
 
@@ -115,10 +110,10 @@ Using the Access Token
 ----------------------
 - Once the ASP.NET intermediary site has the access token...
 - Can include it in future HTTP requests to...
-  + Office 365 / SharePoint Online REST API
-  + Office 365 / SharePoint Online CSOM
-  + Office 365 / Exchange Online REST API
-  + Resources that trust Azure AD
+  - Office 365 / SharePoint Online REST API
+  - Office 365 / SharePoint Online CSOM
+  - Office 365 / Exchange Online REST API
+  - Resources that trust Azure AD
 
 
 
@@ -128,20 +123,7 @@ Demo: Scenario - Project Research Tracker
 
 
 
-Thanks! Any Questions?
-======================
-![questions?](img/clapping.gif)
-
-
-
-Andrew Connell
-==============
-- [www.andrewconnell.com](http://www.andrewconnell.com) | [@andrewconnell](http://www.twitter.com/andrewconnell)
-- this pres: [github.com / andrewconnell / pres-azure-app-sso-o365](http://github.com/andrewconnell/pres-azure-app-sso-o365)
-
-
-
->#Resources
+#Resources
 - [MSDN P&P Web Dev - Project Silk: Client Web Development for Modern Browsers, Chapter 12: Security](http://msdn.microsoft.com/en-us/library/hh404095.aspx)
 - [GitHub: Microsoft Azure Active Directory Samples and Documentation](https://github.com/AzureADSamples)
 - [GitHub: AzureADSamples / WebApp-WebAPI-OAuth2-UserIdentity-DotNet](https://github.com/AzureADSamples/WebApp-WebAPI-OAuth2-UserIdentity-DotNet)
