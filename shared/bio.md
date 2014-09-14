@@ -1,4 +1,4 @@
-![andrew connell](/shared/AndrewConnell_BW_Circle.png)
+![andrew connell](shared/AndrewConnell_BW_Circle.png)
 
 Andrew Connell
 --------------
